@@ -197,7 +197,7 @@ module lsu_exe (
   //wire                                   addr_mshr_isvec        ;
   wire [`REGIDX_WIDTH+`REGEXT_WIDTH-1:0] addr_mshr_reg_idxw     ;
   wire [`NUM_THREAD-1:0]                 addr_mshr_mask         ;
-  //wire                                   addr_mshr_unsigned     ;
+  wire                                   addr_mshr_unsigned     ;
   wire [`BYTESOFWORD*`NUM_THREAD-1:0]    addr_mshr_wordoffset1h ;
   wire                                   addr_mshr_iswrite      ;
   wire [$clog2(`LSU_NMSHRENTRY)-1:0]     mshr_addr_idx_entry    ;

@@ -100,7 +100,7 @@ module fadd_s1 #(
   wire special_path_has_nan ;
   wire special_path_has_snan;
   wire special_path_has_inf ;
-  wire special_path_inf_inv ;
+  wire special_path_inf_iv  ;
   wire special_path_iv      ;
   wire special_case_happen  ;
 

@@ -58,7 +58,7 @@ module simt_stack (
   wire [(1+`DEPTH_WARP+32+32+`NUM_THREAD)-1:0] branch_ctl_buf_i;
   wire [(1+`DEPTH_WARP+32+32+`NUM_THREAD)-1:0] branch_ctl_buf_o; 
 
-  //wire if_mask_buf_fire;
+  wire if_mask_buf_fire;
   //wire if_mask_buf_ready_i;
   //wire if_mask_buf_valid_o;
   //wire [`NUM_THREAD-1:0] if_mask_buf_mask_o;

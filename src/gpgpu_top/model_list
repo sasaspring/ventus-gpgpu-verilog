@@ -182,5 +182,4 @@
 ../../../src/common_cell/dualportSRAM.v
 ../../../src/common_cell/fifo_with_flush.v
 ../../../src/common_cell/fifo.v
-../../../src/common_cell/stream_fifo_pipe_true_has_flush.v
 ../../../src/define/undefine.v

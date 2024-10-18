@@ -317,6 +317,7 @@ module l1_dcache (
   wire [7:0] core_req_control_st1_enq_bits ;
   wire       core_req_control_st1_deq_valid;
   wire       core_req_control_st1_deq_ready;
+  wire       core_req_control_st1_deq_fire;
   wire [7:0] core_req_control_st1_deq_bits ;
 
   assign core_req_control_st1_enq_bits = {is_read_st0      ,

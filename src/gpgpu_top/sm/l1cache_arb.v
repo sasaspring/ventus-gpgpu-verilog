@@ -54,7 +54,7 @@ module l1cache_arb (
 
   genvar i;
   generate for(i=0;i<`NUM_CACHE_IN_SM;i=i+1) begin:B1
-    assign mem_req_arb_a_source[(`D_SOURCE*(i+1)-1)-:`D_SOURCE] = {i,mem_req_in_a_source_i[(`A_SOURCE*(i+1)-1)-:`A_SOURCE]};
+    assign mem_req_arb_a_source[(`D_SOURCE*(i+1)-1)-:`D_SOURCE] = {i[`NUM_CACHE_DEPTH-1:0],mem_req_in_a_source_i[(`A_SOURCE*(i+1)-1)-:`A_SOURCE]};
     //assign mem_req_in_ready_o[i] = (i == mem_req_in_valid_bin) ? mem_req_out_ready_i : 1'h0;
     assign mem_rsp_out_valid_o[i] = (i == mem_rsp_in_d_source_i[(`D_SOURCE-1)-:`NUM_CACHE_DEPTH]) ? mem_rsp_in_valid_i : 1'h0;
   end

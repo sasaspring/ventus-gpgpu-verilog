@@ -35,6 +35,7 @@ module slowdown
   //wire                                                                    slowdown_in_control_ready_o ;
   //wire                                                                    slowdown_out_control_valid_o;
   wire                                                                    slowdown_out_fire           ;
+  wire                                                                    slowdown_in_fire            ;
   reg  [BUFFER_WIDTH*NUM_FETCH-1:0]                                       control_reg                 ;
   reg  [NUM_FETCH-1:0]                                                    mask_reg                    ;
   wire [NUM_FETCH-1:0]                                                    mask_next                   ;

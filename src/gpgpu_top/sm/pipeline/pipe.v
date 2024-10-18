@@ -459,6 +459,7 @@ module pipe (
   wire [(`REGEXT_WIDTH + `REGIDX_WIDTH)-1:0] issue_out_LSU_warps_control_Signals_reg_idxw; 
   wire issue_out_LSU_warps_control_Signals_wvd; 
   wire issue_out_LSU_warps_control_Signals_fence; 
+  wire issue_out_LSU_warps_control_Signals_wxd;
   wire [6:0] issue_out_LSU_warps_control_Signals_imm_ext; 
   wire issue_out_LSU_warps_control_Signals_atomic; 
   wire issue_out_LSU_warps_control_Signals_aq; 
